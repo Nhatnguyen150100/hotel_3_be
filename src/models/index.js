@@ -42,7 +42,7 @@ let sequelize;
 const customConfig = {
   username: "user",
   password: "password",
-  database: "db_hotel",
+  database: "db_hotel_3",
   host: "localhost",
   port: 3306,
   dialect: "mysql",

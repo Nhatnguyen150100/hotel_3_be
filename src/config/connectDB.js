@@ -27,7 +27,7 @@ const { Sequelize } = require("sequelize");
 //   }
 // );
 
-const sequelize = new Sequelize("db_hotel", "user", "password", {
+const sequelize = new Sequelize("db_hotel_3", "user", "password", {
   host: "localhost",
   port: 3306,
   dialect: "mysql",

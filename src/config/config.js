@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 // const DEFAULT_CONFIG_DB = {
-//   DB_DATABASE: "db_hotel",
+//   DB_DATABASE: "db_hotel_3",
 //   DB_USERNAME: "root",
 //   DB_PASSWORD: "password",
 //   DB_HOST: "localhost",
@@ -12,7 +12,7 @@ dotenv.config();
 // };
 
 const DEFAULT_CONFIG_DB = {
-  DB_DATABASE: "db_hotel",
+  DB_DATABASE: "db_hotel_3",
   DB_USERNAME: "user",
   DB_PASSWORD: "password",
   DB_HOST: "localhost",

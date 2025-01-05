@@ -15,8 +15,17 @@ imagesRouter.post("/delete-images", tokenMiddleware.verifyToken, (req, res) => {
     const pathParts = urlObj.pathname.split("/");
     const folderName = pathParts[1];
     const imageName = pathParts.pop();
+    // const imagePath = path.join(
+    //   __dirname,
+    //   "..",
+    //   "..",
+    //   "public",
+    //   folderName,
+    //   imageName
+    // );
     const imagePath = path.join(
       __dirname,
+      "..",
       "..",
       "..",
       "public",

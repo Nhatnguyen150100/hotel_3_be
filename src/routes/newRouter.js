@@ -11,7 +11,15 @@ const newRouter = express.Router();
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const uploadDir = path.join(__dirname, "..", "..", "public", "img-news");
+    // const uploadDir = path.join(__dirname, "..", "..", "public", "img-news");
+    const uploadDir = path.join(
+      __dirname,
+      "..",
+      "..",
+      "..",
+      "public",
+      "img-news"
+    );
     fs.mkdir(uploadDir, { recursive: true }, (err) => {
       if (err) {
         return cb(err);

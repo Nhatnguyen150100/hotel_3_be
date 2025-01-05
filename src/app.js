@@ -55,7 +55,9 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(join(__dirname, "..", "public")));
+// const staticPath = join(__dirname, "..", "public");
+const staticPath = join(__dirname, "..", "..", "public");
+app.use(express.static(staticPath));
 app.use((req, res, next) => {
   res.set("Cache-Control", "no-store");
   next();
