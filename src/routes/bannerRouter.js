@@ -29,7 +29,7 @@ const storage = multer.diskStorage({
     const timestamp = Date.now();
     const extension = path.extname(file.originalname);
     const filePath = `${timestamp}_${extension}`;
-    const url = `http://api.khachsanphuonghoang2samson.vn/banner/${filePath}`;
+    const url = `http://api.phuonghoang3.vn/banner/${filePath}`;
     // const url = `${process.env.BASE_URL_SERVER}/banner/${filePath}`;
     req.body = {
       ...req.body,
